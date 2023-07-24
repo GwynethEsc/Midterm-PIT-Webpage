@@ -1,0 +1,330 @@
+HTML
+------------
+<html>
+<head>
+    <title>Drop Down Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="main-nav-container">
+        <section class = "menu-bar">
+            <nav class="external-links">
+                <ul>
+                    <li class = "active"><a href ="#"><i class="fa fa-home"></i>Home</a>
+                    <li><a href = "#"> <i class = "fa fa-user"></i>About</a>
+                        <div class = "sub-menu-1">
+                            <ul>
+                                <li> <a href = "#"> Mission</a><i class ="fa fa-angle-right"></i></li>
+                                <li> <a href = "#"> Vision</a><i class ="fa fa-angle-right"></i></li>
+                                <li> <a href = "#"> Profile</a><i class ="fa fa-angle-right"></i></li>
+                            </ul>
+                    <li> <a href = "#"> <i class = "fa fa-clone"></i>Services</a>
+                        <div class = "sub-menu-1">
+                            <ul>
+                                <li> <a href = "#"> Web Design</a><i class ="fa fa-angle-right"></i>
+                                <li> <a href = "#"> Marketing</a><i class ="fa fa-angle-right"></i>
+                                <li> <a href = "#"> Mobile App</a><i class ="fa fa-angle-right"></i>
+                            </ul>
+                        </div>
+                    </li>
+            <div class ="social-links">
+                <ul>
+                    <li><i class="fa fa-search" aria-hidden="true"></i>
+                    <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://facebook.com"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+                </ul></div></div>
+        <div class="logo-menu-container">
+            <div class="logo-title-menu">
+            <div class="title-menu">
+
+                </ul>
+            </header>
+            </nav>
+            </section>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+================================================================================================================
+CSS
+--------
+*
+{
+    padding:0;
+    margin:0 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background: url(ss.jpg);
+    background-size: 20%;
+}
+.main-nav-container{
+    background-color:#0b0b45;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.menu-bar{
+    width: 80%;
+    background: #0b0b45;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-bar ul
+{
+    display:inline-flex;
+    list-style: none;
+    color: #fff
+}
+.menu-bar li
+{
+    min-width: fit-content;
+    margin:12px;
+    padding:7px;
+    margin-right: none;
+}
+.menu-bar li a{
+    margin-right: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+.menu-bar li a:hover{
+    color: blueviolet;
+}
+.menu-bar ul li:hover{
+    color: aqua;
+
+}
+.active .menu-bar li:hover
+{
+    background: #0b0b45;
+    border-radius: 2px;
+}
+.menu-bar .fa
+{
+    margin-right:8px;
+}
+.sub-menu-1
+{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background: rgb(17, 0, 95);
+    margin-top: 15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+    width:150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius:0;
+    text-align:left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+    color: blueviolet;
+}
+.fa-angle-right
+{
+    float:right;
+}
+/* Styling for the social media links on the right */
+.social-links {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: center; /* Adjust the top margin as needed */
+}
+.social-links li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 40px; /* Optional: add some spacing between the links */
+  }
+.social-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: opacity 0.3s ease;
+    display: flex;
+}
+
+.social-links li a:hover {
+    color: gold;
+    border-right: none;
+}
+.fa-search{
+    font-size:larger;
+    align-items: center;
+}
+.sub-menu-2
+{
+    display:none;
+}
+.hover-me:hover .sub-menu-2
+{
+    position: absolute;
+    display: block;
+    margin-top: 40px;
+    margin-left: 140px;
+    background: blueviolet;
+}
+.logo-menu-container{
+    background-color: #fff;
+    width: auto;
+    padding: 50px;
+}
+.title-menu{
+    padding: 50px;
+    width: 5px;
+    background: url(add.jpg);
+    background-size: 3cm;
+    display: block;
+}
+.logo-title-menu{
+    background:#d7ddff;
+    padding: 1px;
+    width: 700px;
+    box-sizing: border-box;
+}
+===========================================================================================================
+HTML WITH CSS
+-------------
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Navigation Bar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    /*Container 1*/
+    body {
+      margin: 0;
+      background: url(a.jpg);
+      background-size: 100%;
+      background-position: bottom;
+      font-family: Consolas;
+    }
+
+    /* Styling for the navigation bar */
+    nav {
+      background-color: #1d033b;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    li {
+      margin-right: 30px;
+      margin-left: 40px;
+    }
+
+    /* Styling for the external links on the left */
+    .external-links li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 5px;
+      border-radius: 1px;
+      transition:  0.3s ease;
+      border-right: 1px solid #fff;
+    }
+
+    .external-links li a:hover {
+      background-color: #1f7a1c;
+    }
+
+    /* Styling for the social media links on the right */
+    .social-links li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 20px;
+      transition: opacity 0.3s ease;
+    }
+
+    .social-links li a:hover {
+      color: gold;
+    }
+
+    /* Styling for the dropdown menu */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #1d033b;
+      min-width: 120px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      color: #fff;
+      padding: 25px 50px;
+      text-decoration: none;
+      display: block;
+      border-bottom: 1px solid #fff;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #2d1c7a;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul class="external-links">
+      <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+      <li class="dropdown">
+        <a href="#"><i class="fas fa-info-circle"></i> About</a>
+        <div class="dropdown-content">
+          <a href="#">History</a>
+          <a href="#">Team</a>
+          <a href="#">Vision</a>
+        </div>
+      </li>
+      <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+
+    <ul class="social-links">
+      <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="https://facebook.com"><i class="fab fa-facebook"></i></a></li>
+      <li><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+  </nav>
+</body>
+</html>
+=============================================================================================

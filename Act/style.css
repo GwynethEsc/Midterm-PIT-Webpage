@@ -1,0 +1,254 @@
+*
+{
+    padding:0;
+    margin:0 0;
+    box-sizing: border-box;
+    /*border: solid black;*/
+}
+body{
+    background: rgb(190, 190, 190);
+}
+.main-nav-container{
+    background-color:#0b0b45;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.menu-bar{
+    width: 90%;
+    background: #0b0b45;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 200px;
+}
+.menu-bar ul
+{
+    display:inline-flex;
+    list-style: none;
+    color: #fff
+}
+.menu-bar li
+{
+    min-width: fit-content;
+    margin:12px;
+    padding:7px;
+    margin-right: none;
+    font-size: smaller;
+}
+.menu-bar li a{
+    margin-right: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+.menu-bar li i{
+    margin-right:5px;
+    text-decoration: none;
+}
+.menu-bar li a:hover{
+    color: blueviolet;
+}
+.menu-bar ul li:hover{
+    color: aqua;
+}
+.active .menu-bar li:hover
+{
+    background: #0b0b45;
+    border-radius: 2px;
+}
+.menu-bar .fa
+{
+    margin-right:8px;
+}
+.sub-menu-1
+{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background: rgb(17, 0, 95);
+    margin-top: 15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+    width:150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius:0;
+    text-align:left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+    color: blueviolet;
+}
+.fa-angle-right
+{
+    float:right;
+}
+.social-links{
+    text-align: center;
+}
+.social-links ul{
+    position: absolute;
+    margin-right: 300px;
+    top: 0;
+    right: 0;
+    margin-top: 20px;
+    margin-left: 30%;
+}
+.social-links li {
+    display: inline-block;
+  }
+.fa-facebook{
+    margin-right: 80px;
+}
+.social-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: opacity 0.3s ease;
+    display: block;
+    font-size: medium;
+}
+.social-links li i{
+    color: #fff;
+    font-size: medium;
+}
+.social-links li a:hover {
+    color: gold;
+    border-right: none;
+}
+.fa-search{
+    font-size:larger;
+    align-items: center;
+    margin-right: 80px;
+}
+.social-links li i{
+    transition: .3s ease;
+    display: block;
+    text-decoration: none;
+}
+.social-links li i:hover{
+    color: gold;
+    border-right: none;
+}
+.sub-menu-2
+{
+    display:none;
+}
+.hover-me:hover .sub-menu-2
+{
+    position: absolute;
+    display: block;
+    margin-top: 40px;
+    margin-left: 140px;
+    background: blueviolet;
+}
+.parentbox{
+    background-color: #fff;
+    width: auto;
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+}
+.child1{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    height: 200px;
+}
+.apo1{
+    width: 690px;
+    height: 5cm;
+}
+.child1 .apo1{
+    margin-left: 230px;
+}
+.child1 .apo2{
+    margin-right: 230px;
+}
+.apo1 img{
+    width: 100px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.apo2 ul li{
+    display: inline-block;
+    margin-left: 20px;
+    list-style: none;
+    font-size: large;
+}
+.apo2 ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    transition: .3s;
+}
+.apo2 ul li a i{
+    margin-left: 10px;
+}
+.apo2 ul li:hover a{
+    color: rgb(255, 123, 0);
+}
+.apo2 ul li:hover i{
+    color: rgb(146, 97, 5);
+}
+.box{
+    height: 600px;
+    width: 100%;
+    margin-top: 10px;
+    background: rgb(255, 174, 0);
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.container{
+    margin-top: 50px;
+    height: 200px;
+}
+.child-container{
+    height: 180px;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+.child-container img{
+    margin-top: 10px;
+}
+.about-container{
+    margin-top: 10px;
+    background-color: #0b0b45;
+    justify-content: center;
+    display: flex;
+    border-radius: 20px;
+}
+.about-container div{
+    text-decoration: none;
+    color: #fff;
+    margin-top: 15px;
+    font-size: 250%;
+    margin-left: 45cm;
+}
+.paragraph p{
+    font-style: oblique;
+    font-size: x-large;
+    margin-top: 1cm;
+    justify-content: center;
+    text-justify: auto;
+    margin-left: 300px;
+    margin-right: 300px;
+
+}
