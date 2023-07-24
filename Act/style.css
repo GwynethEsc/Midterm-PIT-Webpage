@@ -4,6 +4,8 @@
     margin:0 0;
     box-sizing: border-box;
     /*border: solid black;*/
+    flex-wrap: wrap;
+
 }
 body{
     background: rgb(190, 190, 190);
@@ -240,15 +242,26 @@ body{
     color: #fff;
     margin-top: 15px;
     font-size: 250%;
-    margin-left: 45cm;
+    margin-left: 115cm;
 }
 .paragraph p{
     font-style: oblique;
     font-size: x-large;
     margin-top: 1cm;
+    text-align: justify;
+    margin-left: 340px;
+    margin-right: 400px;
+}
+.learn-more-btn{
+    margin-top: 10px;
+    background: #0b0b45;
     justify-content: center;
-    text-justify: auto;
-    margin-left: 300px;
-    margin-right: 300px;
+    display: flex;
+}
+.learn-more-btn div{
+    text-decoration: none;
+    color: #fff;
+    margin-top: 15px;
 
+    font-size: 100%;
 }
