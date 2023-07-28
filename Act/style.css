@@ -4,6 +4,8 @@
     margin:0 0;
     box-sizing: border-box;
     /*border: solid black;*/
+    flex-wrap: wrap;
+
 }
 body{
     background: rgb(190, 190, 190);
@@ -185,6 +187,7 @@ body{
     height: auto;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
 }
 .apo2 ul li{
     display: inline-block;
@@ -209,11 +212,12 @@ body{
 }
 .box{
     height: 600px;
-    width: 100%;
+    width: 98%;
     margin-top: 10px;
     background: rgb(255, 174, 0);
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
+    margin-left: 30px;
 }
 .container{
     margin-top: 50px;
@@ -246,9 +250,144 @@ body{
     font-style: oblique;
     font-size: x-large;
     margin-top: 1cm;
-    justify-content: center;
-    text-justify: auto;
-    margin-left: 300px;
-    margin-right: 300px;
-
+    text-align: justify;
+    margin-left: 340px;
+    margin-right: 400px;
 }
+.learn-more-btn{
+    margin-top: 30px;
+    background: #0b0b45;
+    justify-content: center;
+    display: flex;
+}
+.learn-more-btn a:hover{
+    color: yellow;
+}
+.learn-btn span{
+    text-decoration: none;
+    color: orange;
+    margin-top: 15px;
+    font-size: 20;
+    display: flex;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1s;
+  }
+  
+  @keyframes fade {
+    from {opacity: 1}
+    to {opacity: 2}
+  }
+  .ustp-updates{
+    margin-top: 3cm;
+    width: 400;
+    height: 1.50cm;
+    margin-bottom: 1cm;
+  }
+  .ustp-up{
+    height: 1.50cm;
+    width: 400;
+  }
+  .ustp-up span{
+    font-size: 50;
+    font-weight: 600;
+    text-align: center;
+  }
+div .container{
+    display: flex;
+    width: 2000;
+    height: 1200;
+    margin-left: 100px;
+}
+.card{
+    background: white;
+    width: 400px;
+    height: 520px;
+    margin: 10px;
+    margin-left: 50px;
+    border-radius: 15px 15px;
+}
+.card-img{
+    height: 400px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+.container h2{
+    text-align: center;
+}
+.container p{
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.car-1{
+    background-image: url("samples/debut.jpg");
+}
+.car-2{
+    background-image: url("samples/fearless.jpg");
+}
+.car-3{
+    background-image: url("samples/speaknow.jpg");
+}
+.car-4{
+    background-image: url("samples/red.jpg");
+}
+.car-5{
+    background-image: url("samples/nineteen.jpg");
+}
+.car-6{
+    background-image: url("samples/reputation.jpg");
+}
+.car-7{
+    background-image: url("samples/lover.jpg");
+}
+.car-8{
+    background-image: url("samples/midnights.jpg");
+}
+.view-ups-btn{
+    margin-top: 10px;
+    background: #0b0b45;
+    justify-content: center;
+    display: flex;
+}
+.ups-btn span{
+    text-decoration: none;
+    color: orange;
+    margin-top: 15px;
+    font-size: 20;
+    display: flex;
+  }
+  .view-update{
+    color: orange;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20;
+    display: flex;
+  }
+  
